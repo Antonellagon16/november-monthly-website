@@ -1,36 +1,35 @@
-let userName = prompt("What is your name?");
-let userFavColor = prompt("What is your favorite color?");
-let userQuest = prompt("What is your quest?");
-let swallowAirSpeed = prompt("What is the airspeed of an unladen swallow?");
+// Collect user inputs for the first story
+// Prompt user for their name and favorite color
+let adventurerName = prompt("What is your name, brave adventurer?");
+let adventurerColor = prompt("What is your favorite color?");
 
 // Create the first story based on the prompts
-let myStory = `
-  <p>Hello <strong>${userName}</strong>. Answer me these questions three, and the other side you'll see.</p>
-  <p>Your favorite color is <strong>${userFavColor}</strong>, your quest is to <strong>${userQuest}</strong>, 
-  and you claim the airspeed of an unladen swallow is <strong>${swallowAirSpeed}</strong>. Bravo!</p>
+let firstStory = `
+  <p>Greetings, <strong>${adventurerName}</strong>! You stand at the edge of a great journey.</p>
+  <p>Your favorite color, <strong>${adventurerColor}</strong>, shines bright in your destiny.</p>
 `;
 
 // Display the first story in the "story" div
-document.getElementById("story").innerHTML = myStory;
+document.getElementById("story").innerHTML = firstStory;
 
-// Event listener for Mad Libs form
+// Event listener for the Mad Libs form
 document.getElementById("madLibForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   // Collect inputs for the Mad Libs story
-  const noun = document.getElementById("noun").value;
-  const verb = document.getElementById("verb").value;
-  const adjective = document.getElementById("adjective").value;
-  const place = document.getElementById("place").value;
+  const creature = document.getElementById("creature").value;
+  const activity = document.getElementById("activity").value;
+  const description = document.getElementById("description").value;
+  const magicalLand = document.getElementById("magicalLand").value;
 
   // Create the Mad Libs story
   const madLibsStory = `
-    <p>Once upon a time in a faraway <strong>${place}</strong>, 
-    there lived a <strong>${adjective}</strong> <strong>${noun}</strong> who loved to 
-    <strong>${verb}</strong>.</p>
-    <p>Every day, the <strong>${adjective}</strong> <strong>${noun}</strong> would 
-    <strong>${verb}</strong> until the stars filled the sky. 
-    It was a magical life in <strong>${place}</strong>!</p>
+    <p>In the mystical land of <strong>${magicalLand}</strong>, 
+    there lived a <strong>${description}</strong> <strong>${creature}</strong>.</p>
+    <p>Each day, the <strong>${description}</strong> <strong>${creature}</strong> would 
+    <strong>${activity}</strong> under the golden sun, bringing joy to all who beheld it.</p>
+    <p>Life in <strong>${magicalLand}</strong> was full of wonder and magic, 
+    thanks to the <strong>${creature}</strong>'s delightful antics.</p>
   `;
 
   // Append the Mad Libs story to the "story" div

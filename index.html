@@ -3,11 +3,9 @@
 
 <head>
     <title>November Monthly Website</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
@@ -15,35 +13,33 @@
 
 <body>
     <header class="bg-primary text-white text-center py-4">
-        <h1>The Little Keyboard That Could... Not</h1>
-        <p>Fill in the blanks to create your own Mad Libs story!</p>
+        <h1>Make Your Own Story!</h1>
+        <p>Fill in the blanks to create your own story!</p>
     </header>
     <main>
         <div class="container my-5">
             <div class="row">
                 <div class="col-md-6 offset-md-3">
-                    <!-- Mad Libs Form -->
                     <form id="madLibForm" class="mb-4">
                         <div class="mb-3">
-                            <label for="noun" class="form-label">Enter a Noun:</label>
-                            <input type="text" class="form-control" id="noun" required>
+                            <label for="creature" class="form-label">Enter a Magical Creature:</label>
+                            <input type="text" class="form-control" id="creature" required>
                         </div>
                         <div class="mb-3">
-                            <label for="verb" class="form-label">Enter a Verb:</label>
-                            <input type="text" class="form-control" id="verb" required>
+                            <label for="activity" class="form-label">Enter an Activity:</label>
+                            <input type="text" class="form-control" id="activity" required>
                         </div>
                         <div class="mb-3">
-                            <label for="adjective" class="form-label">Enter an Adjective:</label>
-                            <input type="text" class="form-control" id="adjective" required>
+                            <label for="description" class="form-label">Enter a Description (e.g., brave, tiny):</label>
+                            <input type="text" class="form-control" id="description" required>
                         </div>
                         <div class="mb-3">
-                            <label for="place" class="form-label">Enter a Place:</label>
-                            <input type="text" class="form-control" id="place" required>
+                            <label for="magicalLand" class="form-label">Enter a Magical Land:</label>
+                            <input type="text" class="form-control" id="magicalLand" required>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Generate Story</button>
                     </form>
 
-                    <!-- Story Output -->
                     <div id="story" class="p-3 border rounded bg-light text-center"></div>
                 </div>
             </div>
@@ -53,7 +49,6 @@
         <p>&copy; 2024 November Monthly Website. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
