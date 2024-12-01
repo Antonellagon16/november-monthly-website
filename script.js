@@ -1,6 +1,4 @@
-// Collect user inputs for the first story
-// Prompt user for their name and favorite color
-let adventurerName = prompt("What is your name, brave adventurer?");
+let adventurerName = prompt("What is your name?");
 let adventurerColor = prompt("What is your favorite color?");
 
 // Create the first story based on the prompts
